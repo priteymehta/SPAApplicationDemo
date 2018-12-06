@@ -43,6 +43,12 @@ namespace SPADemo1.Controllers
         // GET api/Me
         public GetViewModel Get()
         {
+
+
+
+
+            /// Helllo
+
             var user = UserManager.FindById(User.Identity.GetUserId());
             return new GetViewModel() { Hometown = user.Hometown };
         }
